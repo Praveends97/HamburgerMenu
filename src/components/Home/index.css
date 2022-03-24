@@ -1,0 +1,35 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  flex-grow: 1;
+}
+
+.mobile-home-image {
+  max-width: 485px;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-home-image {
+    display: none;
+  }
+}
+
+.desktop-home-image {
+  width: 100%;
+  max-width: 1110px;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-home-image {
+    display: none;
+  }
+}
